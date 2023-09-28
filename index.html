@@ -5,19 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <div class="item">1</div>
     <div class="item">Lorem ipsum dolor <span>sit</span>, amet <del>consectetur adipisicing</del> elit. Sapiente
       deserunt totam
       fugit aspernatur
-      <img src="images/image81.png" accusamus voluptas dolorum id, ad explicabo eligendi architecto hic repudiandae? A
-        commodi fuga molestias id, quis beatae.</div>
+      <img src="./images/src/image81.png" accusamus voluptas dolorum id, ad explicabo eligendi architecto hic
+        repudiandae? A commodi fuga molestias id, quis beatae.</div>
       <div class="item">3</div>
     </div>
+  </div> -->
+
+  <!-- ul - unordered list - ненумерованый список
+  li - list item - элемент списка -->
+
+  <ul>
+    <li>О компании</li>
+    <li>Наши услуги</li>
+    <li>Контакты</li>
+  </ul>
+
+  <!-- ol - ordered list - ненумерованый список -->
+  <ol type="I">
+    <li class="li-wrapper"><span>О компании</span> <span>(20)</span></li>
+    <li>Наши услуги</li>
+    <li>Контакты</li>
+  </ol>
+
+  <!-- iframe  -->
+  <!-- <iframe src="https://rbc.ru" width="900" height="600" align="left">
+    Ваш браузер не поддерживает плавающие фреймы!
+  </iframe> -->
+
+  <!-- Таблицы
+  th - table head - заголовки столбцов
+  tr - table row - строка таблицы
+  td - table data - ячейка таблицы -->
+
+  <table>
+    <!-- <caption>Таблица размеров обуви</caption> -->
+    <caption valign="bottom">Таблица размеров обуви</caption>
+    <thead>
+      <th>Столбец 1</th>
+      <th>Столбец 2</th>
+      <th>Столбец 3</th>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td bgcolor="#D3EDF6" align="center">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">4</td>
+        <td colspan="2">5</td>
+      </tr>
+      <tr>
+        <!-- <td>7</td> -->
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+
+    <tfooter>
+      <tr>
+        <td colspan="3">Футер</td>
+      </tr>
+    </tfooter>
+  </table>
 </body>
 
 </html>
