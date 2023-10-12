@@ -4,120 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <style>
-    td {
-      background-color: red;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css" />
+  <title>1 column</title>
 </head>
 
 <body>
-  <!-- <div class="wrapper">
-    <div class="item">1</div>
-    <div class="item">Lorem ipsum dolor <span>sit</span>, amet <del>consectetur adipisicing</del> elit. Sapiente
-      deserunt totam
-      fugit aspernatur
-      <img src="./images/src/image81.png" accusamus voluptas dolorum id, ad explicabo eligendi architecto hic
-        repudiandae? A commodi fuga molestias id, quis beatae.</div>
-      <div class="item">3</div>
+  <div class="main-wrapper">
+    <h1>Одноколоночный макет</h1>
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Est qui molestias non dolores quis in, tenetur optio sit libero necessitatibus
+      eius officiis commodi atque iusto quae ab quos dolorum laudantium.</p>
+
+    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Perferendis excepturi tempore facere eos quis.
+      Veniam recusandae facere id earum quos nemo perferendis labore!
+      Dicta, ratione. Voluptatum reiciendis facilis labore accusantium!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Perferendis excepturi tempore facere eos quis.
+      Veniam recusandae facere id earum quos nemo perferendis labore!
+      Dicta, ratione. Voluptatum reiciendis facilis labore accusantium!
+    </p>
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatum odio est deserunt amet doloremque dignissimos,
+      officia nisi voluptatibus nesciunt ad voluptates recusandae,
+      iste vero quia perspiciatis odit, ullam molestiae sit!</p>
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ipsa at, molestiae perspiciatis inventore nam optio, necessitatibus
+      iure ipsam assumenda dolores ut debitis exercitationem quo
+      omnis officia modi aperiam itaque? Pariatur.</p>
+
+    <p class="paragraph">ОК</p>
+  </div>
+
+
+  <div class="main-wrapper">
+    <h1>Двуколоночный макет</h1>
+
+    <div class="sidebar">
+      Текст боковой панели
+
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Est qui molestias non dolores quis in, tenetur optio sit libero necessitatibus
+        eius officiis commodi atque iusto quae ab quos dolorum laudantium.</p>
     </div>
-  </div> -->
 
-  <!-- ul - unordered list - ненумерованый список
-  li - list item - элемент списка -->
+    <article class="main-content">
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Est qui molestias non dolores quis in, tenetur optio sit libero necessitatibus
+        eius officiis commodi atque iusto quae ab quos dolorum laudantium.</p>
 
-  <ul>
-    <li>О компании</li>
-    <li>Наши услуги</li>
-    <li>Контакты</li>
-  </ul>
+      <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Perferendis excepturi tempore facere eos quis.
+        Veniam recusandae facere id earum quos nemo perferendis labore!
+        Dicta, ratione. Voluptatum reiciendis facilis labore accusantium!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Perferendis excepturi tempore facere eos quis.
+        Veniam recusandae facere id earum quos nemo perferendis labore!
+        Dicta, ratione. Voluptatum reiciendis facilis labore accusantium!
+      </p>
 
-  <!-- ol - ordered list - ненумерованый список -->
-  <ol type="I">
-    <li class="li-wrapper"><span>О компании</span> <span>(20)</span></li>
-    <li>Наши услуги</li>
-    <li>Контакты</li>
-  </ol>
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum odio est deserunt amet doloremque dignissimos,
+        officia nisi voluptatibus nesciunt ad voluptates recusandae,
+        iste vero quia perspiciatis odit, ullam molestiae sit!</p>
 
-  <!-- iframe  -->
-  <!-- <iframe src="https://rbc.ru" width="900" height="600" align="left">
-    Ваш браузер не поддерживает плавающие фреймы!
-  </iframe> -->
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ipsa at, molestiae perspiciatis inventore nam optio, necessitatibus
+        iure ipsam assumenda dolores ut debitis exercitationem quo
+        omnis officia modi aperiam itaque? Pariatur.</p>
 
-  <!-- Таблицы
-  th - table head - заголовки столбцов
-  tr - table row - строка таблицы
-  td - table data - ячейка таблицы -->
+      <p class="paragraph">ОК</p>
+    </article>
+  </div>
 
-  <table>
-    <!-- <caption>Таблица размеров обуви</caption> -->
-    <caption valign="bottom">Таблица размеров обуви</caption>
-    <thead>
-      <th>Столбец 1</th>
-      <th>Столбец 2</th>
-      <th>Столбец 3</th>
-    </thead>
 
-    <tbody>
-      <tr>
-        <td class="first-cell" align="center">1</td>
-        <td>2</td>
-        <td class="first-cell">3</td>
-      </tr>
-      <tr>
-        <td rowspan="2" style="background-color: yellow;">4</td>
-        <td colspan="2" bgcolor="blue">5</td>
-      </tr>
-      <tr>
-        <!-- <td>7</td> -->
-        <td id="eight-cell">8</td>
-        <td>9</td>
-      </tr>
-    </tbody>
+  <div class="main-wrapper">
+    <h1>Трёхколоночный макет</h1>
 
-    <tfooter>
-      <tr>
-        <td colspan="3">Футер</td>
-      </tr>
-    </tfooter>
-  </table>
+    <div class="left-panel">
+      Текст боковой панели
 
-  <table class="second-table">
-    <!-- <caption>Таблица размеров обуви</caption> -->
-    <caption valign="bottom">Таблица размеров обуви</caption>
-    <thead>
-      <th>Столбец 1</th>
-      <th>Столбец 2</th>
-      <th>Столбец 3</th>
-    </thead>
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Est qui molestias non dolores quis in, tenetur optio sit libero necessitatibus
+        eius officiis commodi atque iusto quae ab quos dolorum laudantium.</p>
+    </div>
 
-    <tbody>
-      <tr>
-        <td class="first-cell" align="center">1</td>
-        <td>2</td>
-        <td class="first-cell">3</td>
-      </tr>
-      <tr>
-        <td rowspan="2">4</td>
-        <td colspan="2">5</td>
-      </tr>
-      <tr>
-        <!-- <td>7</td> -->
-        <td id="eight-cell">8</td>
-        <td>9</td>
-      </tr>
-    </tbody>
+    <article class="three-column-content">
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Est qui molestias non dolores quis in, tenetur optio sit libero necessitatibus
+        eius officiis commodi atque iusto quae ab quos dolorum laudantium.</p>
 
-    <tfooter>
-      <tr>
-        <td colspan="3">Футер</td>
-      </tr>
-    </tfooter>
-  </table>
+      <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Perferendis excepturi tempore facere eos quis.
+        Veniam recusandae facere id earum quos nemo perferendis labore!
+        Dicta, ratione. Voluptatum reiciendis facilis labore accusantium!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Perferendis excepturi tempore facere eos quis.
+        Veniam recusandae facere id earum quos nemo perferendis labore!
+        Dicta, ratione. Voluptatum reiciendis facilis labore accusantium!
+      </p>
+
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatum odio est deserunt amet doloremque dignissimos,
+        officia nisi voluptatibus nesciunt ad voluptates recusandae,
+        iste vero quia perspiciatis odit, ullam molestiae sit!</p>
+
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ipsa at, molestiae perspiciatis inventore nam optio, necessitatibus
+        iure ipsam assumenda dolores ut debitis exercitationem quo
+        omnis officia modi aperiam itaque? Pariatur.</p>
+
+      <p class="paragraph">ОК</p>
+    </article>
+
+    <div class="right-panel">
+      Текст боковой панели
+
+      <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Est qui molestias non dolores quis in, tenetur optio sit libero necessitatibus
+        eius officiis commodi atque iusto quae ab quos dolorum laudantium.</p>
+    </div>
+  </div>
+
 </body>
 
 </html>
