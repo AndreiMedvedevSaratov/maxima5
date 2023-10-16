@@ -44,21 +44,69 @@
   overflow: hidden;
 }
 
+.main-wrapper-3-column {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px;
+  width: 1000px;
+  border: 1px solid black;
+}
+
+.left-panel,
+.right-panel {
+  border: 1px solid blue;
+}
+
 .left-panel {
   width: 199px;
-  float: left;
-  border: 1px solid blue;
+  margin-right: 680px;
 }
 
 .right-panel {
   width: 299px;
   float: right;
-  border: 1px solid blue;
+  margin-left: 20px;
 }
 
 .three-column-content {
-  width: 479px;
-  margin-left: 209px;
-  margin-right: 305px;
+  width: 379px;
+  float: right;
   border: 1px solid green;
+}
+
+.bold-font {
+  font-weight: 900;
+  color: red;
+}
+
+span.bold-font {
+  color: blue;
+}
+
+h1 .bold-font {
+  color: blue;
+}
+
+.three-column-content > .paragraph > .orange {
+  color: orange;
+}
+
+.paragraph + h3 {
+  color: red;
+}
+
+#our-id {
+  color: brown;
+}
+
+h3 + h3 {
+  color: blue;
+}
+
+.text-specifichnost {
+  color: red;
+}
+
+p {
+  color: green;
 }
