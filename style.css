@@ -1,112 +1,77 @@
+body {
+  position: relative;
+}
+
 .main-wrapper {
-  /* margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto; */
-
-  /* margin: 200px; */
-
-  margin: 0 auto;
-
-  /* margin: 0 auto 0 auto; */
-  /* margin: 200px 50px 300px; */
-
-  /* padding: 30px 40px 50px 60px; */
-  padding: 10px;
-
-  width: 1000px;
-  border: 1px solid black;
-}
-
-.paragraph {
-  margin-top: 30px;
-  margin-bottom: 50px;
-
-  /* padding: 10px 20px 30px 40px; */
-  padding: 10px;
-
-  border: 1px solid red;
-  border-radius: 20px;
-
-  /* text-align: justify; */
-}
-
-.sidebar {
-  width: 199px;
-  float: left;
-  border: 1px solid blue;
-}
-
-.main-content {
-  width: 789px;
-  margin-left: 209px;
-  border: 1px solid green;
-  overflow: hidden;
-}
-
-.main-wrapper-3-column {
-  overflow: hidden;
   margin: 0 auto;
   padding: 10px;
   width: 1000px;
+  height: 6000px;
   border: 1px solid black;
+  position: relative;
 }
 
-.left-panel,
-.right-panel {
-  border: 1px solid blue;
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  width: 1000px;
+  height: 190px;
+  margin: 5px 0;
 }
 
-.left-panel {
-  width: 199px;
-  margin-right: 680px;
+.item-1 {
+  background-color: blue;
+  position: sticky;
 }
 
-.right-panel {
-  width: 299px;
-  float: right;
-  margin-left: 20px;
+.item-2 {
+  width: 100px;
+  height: 50px;
+  background-color: red;
 }
 
-.three-column-content {
-  width: 379px;
-  float: right;
-  border: 1px solid green;
+.item-3 {
+  background-color: green;
+  position: relative;
+  top: 60px;
+  left: 70px;
+  /* z-index: 1; */
 }
 
-.bold-font {
-  font-weight: 900;
-  color: red;
+.item-4 {
+  background-color: yellow;
 }
 
-span.bold-font {
-  color: blue;
+.item-2 {
+  position: fixed;
+  bottom: 50px;
+  right: -80px;
+  cursor: pointer;
 }
 
-h1 .bold-font {
-  color: blue;
+.item-2:hover {
+  right: 0px;
 }
 
-.three-column-content > .paragraph > .orange {
-  color: orange;
+.sticky {
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: sticky;
+  top: 50px;
+  left: 30px;
+  background-color: brown;
+  z-index: 1;
 }
 
-.paragraph + h3 {
-  color: red;
-}
-
-#our-id {
-  color: brown;
-}
-
-h3 + h3 {
-  color: blue;
-}
-
-.text-specifichnost {
-  color: red;
-}
-
-p {
-  color: green;
+.modal {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  z-index: 20;
+  background-color: pink;
+  margin: 0 auto;
+  opacity: 1;
 }
