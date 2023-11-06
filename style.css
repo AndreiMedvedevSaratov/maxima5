@@ -2,84 +2,113 @@ html {
   font-size: 16px;
 }
 
-body {
-  position: relative;
-}
-
 .main-wrapper {
   margin: 0 auto;
-  padding: 10px;
-  width: 80vw;
-  height: 6000px;
+  padding: 50px;
+  /* width: 1000px; */
+  height: 1000px;
   border: 1px solid black;
-  position: relative;
   font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .item-1,
 .item-2,
 .item-3,
 .item-4 {
-  width: 50%;
-  min-width: 400px;
-  max-width: 500px;
-  /* height: 190px; */
-  height: 20vh;
-  margin: 5px 0;
+  width: 400px;
+  height: 190px;
+  margin: 5px;
+  display: block;
 }
 
 .item-1 {
   background-color: blue;
-  position: sticky;
 }
 
 .item-2 {
-  width: 100px;
-  height: 50px;
   background-color: red;
 }
 
 .item-3 {
   background-color: green;
-  position: relative;
-  top: 60px;
-  left: 70px;
-  /* z-index: 1; */
 }
 
 .item-4 {
   background-color: yellow;
 }
 
-.item-2 {
-  position: fixed;
-  bottom: 50px;
-  right: -80px;
-  cursor: pointer;
+/* от нуля до 576px */
+@media screen and (max-width: 576px) {
+  /* .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
+    width: 500px;
+    height: 100px;
+    margin: 5px 0;
+  } */
+
+  .item-1 {
+    background-color: yellow;
+  }
+
+  .item-2 {
+    background-color: green;
+  }
+
+  .item-3 {
+    background-color: red;
+  }
+
+  .item-4 {
+    background-color: blue;
+  }
 }
 
-.item-2:hover {
-  right: 0px;
+/* от 576px до 992px*/
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
+    width: 600px;
+    height: 150px;
+    margin: 5px 0;
+  } */
+
+  .main-wrapper {
+    width: 600px;
+    padding: 20px;
+  }
+
+  .item-1 {
+    background-color: red;
+  }
+
+  .item-2 {
+    background-color: blue;
+  }
+
+  .item-3 {
+    background-color: green;
+  }
+
+  .item-4 {
+    background-color: yellow;
+  }
 }
 
-.sticky {
-  width: 500px;
-  height: 50px;
-  margin: 0 auto;
-  border: 1px solid black;
-  position: sticky;
-  top: 50px;
-  left: 30px;
-  background-color: brown;
-  z-index: 1;
-}
-
-.modal {
-  position: fixed;
-  width: 300px;
-  height: 300px;
-  z-index: 20;
-  background-color: pink;
-  margin: 0 auto;
-  opacity: 1;
+/* от 1600px*/
+@media screen and (min-width: 1600px) {
+  /* .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
+    width: 900px;
+    height: 400px;
+    margin: 5px 0;
+  } */
 }
