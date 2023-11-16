@@ -42,3 +42,23 @@ html {
   background-color: yellow;
   /* order: -100; */
 }
+
+.calculate {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 2000ms ease;
+  cursor: pointer;
+}
+
+.kvadrat {
+  width: 20px;
+  height: 20px;
+  background-color: brown;
+}
+
+.calculate:hover {
+  transform: scale(1.5) rotate(-180deg) translateX(1000px);
+}
