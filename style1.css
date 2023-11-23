@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px;
 }
@@ -25,16 +26,16 @@ html {
 }
 
 .item-1 {
-  background-color: blue;
+  background-color: rgba(1, 255, 255, 0.466);
   /* order: 1; */
 }
 
 .item-2 {
-  background-color: red;
+  background-color: rgba(1, 255, 255, 0.6941176471);
 }
 
 .item-3 {
-  background-color: green;
+  background-color: black;
   /* order: 2; */
 }
 
@@ -51,14 +52,17 @@ html {
   align-items: center;
   transition: all 2000ms ease;
   cursor: pointer;
+  /** Это многострочный комментарий.
+  * Так как этот тип комментирования
+  * поддерживается в CSS, то он
+  * попадет в скомпилированный CSS-файл. */
+}
+.calculate:hover {
+  transform: scale(1.5) rotate(-180deg) translateX(1000px);
 }
 
 .kvadrat {
   width: 20px;
   height: 20px;
   background-color: brown;
-}
-
-.calculate:hover {
-  transform: scale(1.5) rotate(-180deg) translateX(1000px);
-}
+}/*# sourceMappingURL=style1.css.map */
