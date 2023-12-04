@@ -41,4 +41,5 @@ console.log(random.toFixed(2));
 const name1 = "My name is Vasya";
 console.log(name1);
 
-name1 = 567;
+// name1 = 567;
+console.log(0.1 + 0.2);
