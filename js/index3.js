@@ -11,8 +11,14 @@ let person = {
   },
 };
 
-console.log(person);
-console.log(person.address.house);
-console.log(person.isAdmin);
+// console.log(person);
+// console.log(person.address.house);
+// console.log(person.isAdmin);
 
-console.log(person["address"]);
+// console.log(person["address"]);
+
+let person1 = person;
+
+person1.age = 30;
+
+console.log(person.age);
